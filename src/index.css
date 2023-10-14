@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.counterDiv{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.btnGroup{
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.increment:hover, .decrement:hover {
+  background-color: #45a049;
+}
+
+.increment {
+  border-radius: 50% 0 0 50%;
+}
+
+.decrement {
+  border-radius: 0 50% 50% 0;
+}
+
+
+

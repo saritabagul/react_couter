@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+
 const Counter = () =>{
     const [counter,setCounter] = useState(0);
 
     const IncrementCounter = ()=>{       
-        if(counter < 20){
+        // if(counter < 20){
             setCounter(counter + 1);
-        }
+        // }
         
     }
 
@@ -17,11 +18,13 @@ const Counter = () =>{
         
     }
     return (
-        <div style={{textAlign:"center",margin:50}}>
+        <div className="counterDiv">
             {counter}
             <br/>
-            <button onClick={IncrementCounter} > + </button>
-            <button onClick={DecrementCounter} > - </button>
+            <div className="btnGroup">
+                <button className="increment" onClick={IncrementCounter} > + </button>
+                <button className="decrement" onClick={DecrementCounter} > - </button>
+            </div>
         </div>
     );
 }
